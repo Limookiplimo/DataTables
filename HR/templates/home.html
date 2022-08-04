@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+<!-- Navbar Content -->
+{% block navbar-content %}
+<i style="color: yellowgreen" class="fas fa-user alt"></i>&nbsp;&nbsp; Human
+Resource {% endblock navbar-content %}
+
+<!--Page Content -->
+{% block content %}
+<div class="container">
+  <br /><br /><br />
+
+  <table class="table table-bordered" id="example" style="text-align: center">
+    <thead class="table-success">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Title</th>
+        <th>Occupation</th>
+        <th>Department</th>
+        <th>Branch</th>
+        <th>Salary</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <!-- Backend Connection -->
+
+    {% for employee in employees %}
+    <tr>
+      <td>{{employee.id}}</td>
+      <td>{{employee.name}}</td>
+      <td>{{employee.gender}}</td>
+      <td>{{employee.title}}</td>
+      <td>{{employee.occupation}}</td>
+      <td>{{employee.department}}</td>
+      <td>{{employee.branch}}</td>
+      <td>{{employee.salary}}</td>
+      <td>{{employee.status}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+<!-- END Container -->
+
+<br /><br /><br /><br />
+{% endblock content %}

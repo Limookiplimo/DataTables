@@ -1,0 +1,65 @@
+/*----------------
+#Start Configurations
+------------------*/
+
+html,
+body{
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+}
+
+/*----------------
+#Footer
+------------------*/
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+#footer,
+.push{
+    height: 50px;
+}
+
+/*----------------
+#Custom Pagination
+------------------*/
+.page-item.active .page-link{
+    columns: #fff;
+    background-color: #6c757d;
+    border: 1px solid #050505;
+}
+.pagination > li > a{
+    background-color: #fff;
+    color: #6c757d;
+}
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > span > a:focus,
+.pagination > span > a:hover{
+    color: rgb(61, 30, 30);
+    background-color: #d3d3d3;
+    border: 1px solid #0a0a0a;
+    box-shadow: none;
+}
+
+/*----------------
+#Datatable
+------------------*/
+/* Pagination margin */
+
+.dataTables_paginate{
+    margin-top: 15px !important;
+}
+
+/* Filter margin */
+
+.dataTables_filter{
+    display: none;
+}
+
+/* DataTables' Length*/
+.dataTables_length{
+    margin-bottom: 10px !important;
+}
